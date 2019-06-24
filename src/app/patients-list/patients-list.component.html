@@ -1,0 +1,23 @@
+<input type="button" class="btn btn-primary" (click)="addPatient()" value="Add Patient">
+<table class="table">
+    <thead>
+  <tr class="thead-dark">
+    <th scope="col">
+      Name  
+    </th>
+    <th scope="col">
+      Phone
+    </th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let patient of patients">
+    <td >
+     {{patient.Name}} 
+    </td>
+    <td >
+      {{patient.Phone}} 
+     </td>
+  </tr>
+</tbody>
+</table>
